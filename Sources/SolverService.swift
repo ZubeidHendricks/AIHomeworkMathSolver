@@ -59,10 +59,14 @@ struct OnDeviceSolver: MathSolving {
     }
 
     static func evaluate(_ expr: String) -> Double? {
-        // NSExpression handles +,-,*,/, parentheses, ** (power) and % (modulo).
-        let e = expr.replacingOccurrences(of: "**", with: "**")
-        guard e.rangeOfCharacter(from: CharacterSet(charactersIn: "0123456789")) != nil else { return nil }
-        let expression = NSExpression(format: e)
+        guard expr.rangeOfCharacter(from: CharacterSet(charactersIn: "0123456789")) != nil else { return nil }
+        // NSExpression does INTEGER division on integer literals (10/4 -> 2), so
+        // promote standalone integer literals to decimals to force float math.
+        let floatized = expr.replacingOccurrences(
+            of: #"(?<![\d.])(\d+)(?![\d.])"#,
+            with: "$1.0",
+            options: .regularExpression)
+        let expression = NSExpression(format: floatized)
         guard let result = expression.expressionValue(with: nil, context: nil) as? NSNumber else { return nil }
         return result.doubleValue
     }
