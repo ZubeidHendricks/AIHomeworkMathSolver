@@ -1,0 +1,21 @@
+Math Solver reads problems straight from a photo and solves them instantly — right on your device.
+
+SNAP OR TYPE
+• Photograph a printed problem — it's read automatically
+• Or type it in with full operator support: + − × ÷ ( )
+• Decimals handled correctly, every time
+
+LEARN, DON'T JUST COPY
+• Step-by-step breakdowns with Pro
+• Understand how the answer is reached
+• Great for checking homework fast
+
+Private by design: photos are read on-device and never uploaded.
+SUBSCRIPTIONS
+Pro is an auto-renewing subscription (yearly or weekly). Payment is charged to your Apple ID at confirmation; it renews unless cancelled at least 24 hours before the period ends. Manage or cancel anytime in your Apple ID settings.
+
+PRIVACY FIRST
+Everything runs on your device — nothing is uploaded.
+
+Terms: https://zubeidhendricks.github.io/AIHomeworkMathSolver/terms.html
+Privacy: https://zubeidhendricks.github.io/AIHomeworkMathSolver/privacy.html
